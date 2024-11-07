@@ -1,7 +1,26 @@
-/*
-    home.css: This website contains selectors only used in home.css
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url("../img/background.jpg"); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
 
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
+/* Overlay oscuro */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Contenido de la Hero Section */
+.hero-content {
+    z-index: 2;
+    max-width: 600px;
+}
